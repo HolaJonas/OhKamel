@@ -18,6 +18,10 @@ In other words: **OCaml Inception**
 - Supports integers, booleans, tuples, lambda expressions, let bindings, recursive functions, and basic operators
 - Hindley-Milner style type checking
 
+## Demo
+
+Explore a web-based [WIP Demo](https://holajonas.github.io/OCaml-Inception/).
+
 ## Build
 
 Requires OCaml and [opam](https://opam.ocaml.org/).
