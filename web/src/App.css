@@ -1,0 +1,143 @@
+.app {
+  width: min(1100px, 100%);
+  display: grid;
+  gap: 1rem;
+}
+
+section,
+header {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.playground {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.editor-panel {
+  min-width: 0;
+}
+
+.showcase-panel {
+  min-width: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+button {
+  margin-top: 0.75rem;
+  border: 1px solid #bbbbbb;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.showcase {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background: #fcfcfc;
+  overflow: hidden;
+}
+
+.showcase-toggle {
+  width: 100%;
+  margin-top: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  justify-content: flex-start;
+  font-weight: 600;
+  background-color: #f1f1f1;
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  padding: 0.75rem 0.85rem;
+}
+
+.showcase-title {
+  font-size: 0.95rem;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #444444;
+  transform: rotate(-90deg);
+  transition: transform 0.2s ease;
+}
+
+.triangle-expanded {
+  transform: rotate(0deg);
+}
+
+.showcase-content {
+  margin: 0;
+  padding: 0.5rem 0.75rem 0.7rem;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.showcase-content li {
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background: #f7f7f7;
+  padding: 0.45rem 0.55rem;
+  font-family: var(--mono);
+  font-size: 0.88rem;
+}
+
+pre {
+  margin-top: 0.6rem;
+  white-space: pre-wrap;
+  background: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+  min-height: 70px;
+}
+
+@media (max-width: 880px) {
+  .playground {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-panel {
+    order: -1;
+  }
+}

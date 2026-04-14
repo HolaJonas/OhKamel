@@ -9,6 +9,7 @@ bug-reports: "https://github.com/HolaJonas/OCaml-Inception/issues"
 depends: [
   "dune" {>= "3.17"}
   "ocaml"
+  "js_of_ocaml"
   "odoc" {with-doc}
 ]
 build: [

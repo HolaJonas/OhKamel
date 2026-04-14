@@ -1,0 +1,23 @@
+:root {
+  --mono: Consolas, "Courier New", monospace;
+  --sans: "Segoe UI", Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: #f3f3f3;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  padding: 1rem;
+}

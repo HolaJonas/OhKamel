@@ -1,0 +1,16 @@
+export const supportedForms = [
+  "Integer constants",
+  "Boolean constants: true, false",
+  "Variables: <identifier>",
+  "Tuple expressions: (<expression>, <expression>, ...)",
+  "Parenthesized expressions: (<expression>)",
+  "Function application: <expression> <expression>",
+  "Lambda expressions: fun <identifier> -> <expression>",
+  "Conditional expressions: if <expression> then <expression> else <expression>",
+  "Let bindings: let <pattern> = <expression> in <expression>",
+  "Recursive let bindings: let rec <identifier> <identifier> = <expression> in <expression>",
+  "Patterns: <identifier> | _ | (<pattern>, <pattern>, ...)",
+  "Arithmetic operators: +, -, *, /",
+  "Logical operators: &&, ||",
+  "Comparison operators: =, <, <=, >, >=",
+];

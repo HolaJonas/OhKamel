@@ -1,4 +1,5 @@
 (executable
  (public_name ocaml_inception)
  (name main)
- (libraries ocaml_inception))
+ (modes exe js)
+ (libraries ocaml_inception js_of_ocaml))
